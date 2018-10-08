@@ -8,6 +8,11 @@ body{
     background-color: aliceblue;
 }
 
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
 header{
     min-height: 100px;
     display: flex;
