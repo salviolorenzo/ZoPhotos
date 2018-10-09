@@ -59,10 +59,12 @@ nav li:hover{
     background-position: center;
     min-width: 100%;
     min-height: 400px;
+    margin-bottom: 50px;
 }
 
 .featured{
     width: 100%;
+    margin-bottom: 50px;
 }
 
 h2{
@@ -99,6 +101,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .album-container img{
@@ -127,9 +130,17 @@ h2{
 
 footer{
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: space-around;
     align-items: center;
     min-height: 100px;
+}
+
+footer p{
+    width: 100%;
+    margin: 0;
+    color: rgb(193, 193, 193);
 }
 .contact {
     display: inherit;
@@ -154,4 +165,33 @@ footer{
 }
 
 
+@media screen and (min-width: 768px){
+    .photo-container img{
+        width:49%;
+        margin: 10px 0;
+    }
 
+    .album-container img{
+        width: 30%;
+    }
+
+    .about{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about img{
+        width: 40%;
+    }
+
+    .about p{
+        width: 50%;
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    /* .album-container img{ */
+        /* width: 24%; */
+    /* } */
+}
