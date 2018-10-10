@@ -72,7 +72,7 @@ h2{
 }
 
 .photo-container{
-    /* padding: 10px; */
+    padding: 5px;
     width:  100%;
     display: flex;
     flex-wrap: wrap;
@@ -85,14 +85,28 @@ h2{
     text-align: center;
 }
 
-.photo-container img{
-    width: 80%;
+.cards{
+    display: inherit;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    width: 100%;
+    height: 80%; 
     margin: 10px 0;
 }
 
-.photo-container img:hover{
-    transform: scale(1.3);
-    transition: transform 0.5s;
+.cards h4{
+    width: 70%;
+    margin: 5px 10px 20px 10px;
+    
+}
+
+.cards i{
+    font-size: 26px;
 }
 
 .album-container{
@@ -124,8 +138,12 @@ h2{
     padding: 15px 0;
 }
 
-.about p{
+.info{
     width: 80%;
+}
+
+.info h3, .info h5{
+    margin: 5px 0;
 }
 
 footer{
@@ -154,7 +172,7 @@ footer p{
     color: rgb(193, 193, 193);
 }
 
-.contact i:hover{
+.contact i:hover, .cards i:hover{
     color: #3474e4;
     transform: scale(1.5);
     transition: transform 0.25s;
@@ -166,13 +184,22 @@ footer p{
 
 
 @media screen and (min-width: 768px){
-    .photo-container img{
-        width:49%;
+    .photo-container{
+        justify-content: space-between;
+    }
+    
+    .cards{
+        width: 48%;
+    }
+
+    .cards img{
+        width:100%;
         margin: 10px 0;
     }
 
     .album-container img{
         width: 30%;
+        margin: 5px;
     }
 
     .about{
@@ -184,7 +211,7 @@ footer p{
         width: 40%;
     }
 
-    .about p{
+    .info{
         width: 50%;
         font-size: 22px;
     }
