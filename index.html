@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>ZO's Photos</title>
 </head>
 <body>
@@ -34,9 +34,9 @@
     <section class="hero-landing">
     </section>
     <section class="featured">
-        <h2>Featured Photos</h2>
-        <div class="photo-container">
-            <div class="cards">
+        <h2>Featured</h2>
+        <div class="photo-container" data-featured>
+            <!-- <div class="cards">
                 <img src="images/image77.jpg" alt="">
                 <h4>Luxembourg Garden, Paris, France<br>August 16, 2018 <br>10:58 a.m.</h4>
                 <a href="https://www.google.com/maps/place/Marie+De+Medicis+Fountain/@48.8480604,2.3385868,18z/data=!4m5!3m4!1s0x47e671dc92377a55:0x67d6057607646f7c!8m2!3d48.8480528!4d2.3393268"><i class="fas fa-search-location"></i></a>
@@ -55,12 +55,13 @@
                 <img src="images/image2.jpg" alt="">
                 <h4>Malaquais Quay, Paris, France <br>August 16, 2018 <br>11:39 a.m.</h4>
                 <a href="https://www.google.com/maps/place/Quai+Malaquais,+75006+Paris,+France/@48.8583758,2.3331343,18z/data=!4m5!3m4!1s0x47e66e2877673a37:0x5f38da7d537f6088!8m2!3d48.8583476!4d2.333115"><i class="fas fa-search-location"></i></a>
-            </div>
+            </div> -->
         </div>
 
     </section>
-    <section class="album-grid">
+    <section class="album-grid" data-grid>
         <h2>Albums</h2>
+        <p>click to enlarge</p>
         <div class="photo-container album-container">
             <h3>Paris, August 2018</h3>
             <img src="images/image1.jpg" alt="">
@@ -69,6 +70,13 @@
             <img src="images/image40.jpg" alt="">
             <img src="images/image65.jpg" alt="">
             <img src="images/image86.jpg" alt="">
+        </div>
+        <div class="photo-container album-container">
+            <h3>Buckhead, Atlanta, October 2018</h3>
+            <img src="images/DSC_0004.jpg" alt="">
+            <img src="images/DSC_0021.jpg" alt="">
+            <img src="images/DSC_0037.jpg" alt="">
+            <img src="images/DSC_0038.jpg" alt="">
         </div>
     </section>
     <h2>About me:</h2>
@@ -92,5 +100,6 @@
         </ul>
         <p>Shooting on Nikon D3400 -- 18-55mm/70-300mm | iPhone 6s Plus</p>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
