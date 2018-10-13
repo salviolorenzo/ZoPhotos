@@ -12,28 +12,25 @@
 </head>
 <body>
     <header>
-        <h1>ZO's Photos</h1>
+        <h1 id="home">ZO's Photos</h1>
         <nav>
             <li>
-               <a href="#">Home</a>
+               <a href="#home">Home</a>
             </li>
-            <li><a href="#">
+            <li><a href="#featured">
                 Featured</a>
             </li>
-            <li><a href="#">
-                Places</a>
-            </li>
-            <li><a href="#">
+            <li><a href="#places">
                 Albums</a>
             </li>
-            <li><a href="#">
+            <li><a href="#about">
                 About</a>
             </li>
         </nav>
     </header>
     <section class="hero-landing">
     </section>
-    <section class="featured">
+    <section class="featured" id="featured">
         <h2>Featured</h2>
         <div class="photo-container" data-featured>
             <!-- <div class="cards">
@@ -59,7 +56,7 @@
         </div>
 
     </section>
-    <section class="album-grid" data-grid>
+    <section class="album-grid" data-grid id="places">
         <h2>Albums</h2>
         <p>click to enlarge</p>
         <div class="photo-container album-container">
@@ -69,6 +66,8 @@
             <img src="images/image51.jpg" alt="">
             <img src="images/image40.jpg" alt="">
             <img src="images/image65.jpg" alt="">
+            <img src="images/image77.jpg" alt="">
+            <img src="images/image84.jpg" alt="">
             <img src="images/image86.jpg" alt="">
         </div>
         <div class="photo-container album-container">
@@ -80,7 +79,7 @@
         </div>
     </section>
     <h2>About me:</h2>
-    <section class="about">
+    <section class="about" id="about">
         <img src="images/head-shot.png" alt="">
         <div class="info">
             <h3>Lorenzo Salvio</h3>
