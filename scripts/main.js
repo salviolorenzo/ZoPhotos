@@ -28,10 +28,10 @@ const featuredImages = [
     },
 ]
 
-let index=0;
+let index = 0;
 // creates the maps link
-function createLink(imageArray){
-    let current=imageArray[index];
+function createLink(imageArray) {
+    let current = imageArray[index];
     let anchor = document.createElement('a');
     let icon = document.createElement('i');
     icon.classList.add('fas', 'fa-search-location');
@@ -40,21 +40,21 @@ function createLink(imageArray){
     return anchor;
 }
 // adds the caption
-function createCaption(imageArray){
-    let current=imageArray[index];
+function createCaption(imageArray) {
+    let current = imageArray[index];
     let caption = document.createElement('h4');
     caption.textContent = current['caption'];
     return caption;
 }
 
-function createImg(imageArray){
-    let current=imageArray[index];
+function createImg(imageArray) {
+    let current = imageArray[index];
     let img = document.createElement('img');
     img.setAttribute('src', current['src']);
     return img;
 }
 
-function createCard(){
+function createCard() {
     let card = document.createElement('div');
     card.classList.add('cards');
     card.appendChild(createImg(featuredImages));
@@ -65,7 +65,7 @@ function createCard(){
     return card;
 }
 
-featuredImages.forEach(function(){
+featuredImages.forEach(function () {
     createCard();
     index++;
 });
@@ -76,17 +76,17 @@ const body = document.querySelector('body');
 const container = document.querySelectorAll('.album-container');
 const headers = document.querySelectorAll('h3');
 
-function escapeButton(){
+function escapeButton() {
     let button = document.createElement('button');
     button.textContent = 'X'
-    button.addEventListener('click', function(){
+    button.addEventListener('click', function () {
         let parent = button.parentNode;
         parent.parentNode.removeChild(parent);
     });
     return button;
 }
 
-function createBigImage(item){
+function createBigImage(item) {
     let big = document.createElement('div');
     let bigImage = document.createElement('img');
     bigImage.setAttribute('src', item);
@@ -98,8 +98,8 @@ function createBigImage(item){
 }
 
 
-for(item of albumImages){
-    item.addEventListener('click', function(event){
+for (item of albumImages) {
+    item.addEventListener('click', function (event) {
         createBigImage(event.target.src);
     });
 }
