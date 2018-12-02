@@ -1,119 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>ZO's Photos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="styles/main.css">
-  <title>ZO's Photos</title>
-</head>
-
-<body>
-  <header>
-    <h1 id="home">ZO's Photos</h1>
-    <nav>
-      <li>
-        <a href="#home">Home</a>
-      </li>
-      <li><a href="#featured">
-          Featured</a>
-      </li>
-      <li><a href="#places">
-          Albums</a>
-      </li>
-      <li><a href="#about">
-          About</a>
-      </li>
-    </nav>
-  </header>
-  <section class="hero-landing">
-  </section>
-  <section class="featured" id="featured">
-    <h2>Featured</h2>
-    <div class="photo-container" data-featured>
-      <div class="cards">
-        <img src="images/image77.jpg" alt="">
-        <h4>Luxembourg Garden, Paris, France<br>August 16, 2018 <br>10:58 a.m.</h4>
-        <a href="https://www.google.com/maps/place/Marie+De+Medicis+Fountain/@48.8480604,2.3385868,18z/data=!4m5!3m4!1s0x47e671dc92377a55:0x67d6057607646f7c!8m2!3d48.8480528!4d2.3393268"><i
-            class="fas fa-search-location"></i></a>
+  <body>
+    <header>
+      <h1 id="home">ZO's Photos</h1>
+      <nav>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured"> Featured</a></li>
+        <li><a href="#places"> Albums</a></li>
+        <li><a href="#about"> About</a></li>
+      </nav>
+    </header>
+    <section class="hero-landing"></section>
+    <section class="featured" id="featured">
+      <h2>Featured</h2>
+      <div class="photo-container" data-featured>
+        <div class="cards">
+          <img src="images/image77.jpg" alt="" />
+          <h4>
+            Luxembourg Garden, Paris, France<br />August 16, 2018 <br />10:58
+            a.m.
+          </h4>
+          <a
+            href="https://www.google.com/maps/place/Marie+De+Medicis+Fountain/@48.8480604,2.3385868,18z/data=!4m5!3m4!1s0x47e671dc92377a55:0x67d6057607646f7c!8m2!3d48.8480528!4d2.3393268"
+            ><i class="fas fa-search-location"></i
+          ></a>
+        </div>
+        <div class="cards">
+          <img src="images/image84.jpg" alt="" />
+          <h4>
+            La Villete Park, Paris, France<br />August 15, 2018 <br />4:36 p.m.
+          </h4>
+          <a
+            href="https://www.google.com/maps/place/Faleh+Alaeddine/@48.8912705,2.3860968,19z/data=!3m1!4b1!4m5!3m4!1s0x47e66dcc0ffd0243:0x10ff49b5ca4b8d6a!8m2!3d48.8912705!4d2.3860968"
+            ><i class="fas fa-search-location"></i
+          ></a>
+        </div>
+        <div class="cards">
+          <img src="images/image43.jpg" alt="" />
+          <h4>
+            Eiffel Tower, seen from Bateau Mouche, Seine River, Paris, France
+            <br />August 14, 2018 <br />4:20 p.m.
+          </h4>
+          <a
+            href="https://www.google.com/maps/place/48%C2%B051'26.1%22N+2%C2%B017'19.8%22E/@48.857247,2.28884,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d48.8572475!4d2.2888404"
+            ><i class="fas fa-search-location"></i
+          ></a>
+        </div>
+        <div class="cards">
+          <img src="images/image2.jpg" alt="" />
+          <h4>
+            Malaquais Quay, Paris, France <br />August 16, 2018 <br />11:39 a.m.
+          </h4>
+          <a
+            href="https://www.google.com/maps/place/Quai+Malaquais,+75006+Paris,+France/@48.8583758,2.3331343,18z/data=!4m5!3m4!1s0x47e66e2877673a37:0x5f38da7d537f6088!8m2!3d48.8583476!4d2.333115"
+            ><i class="fas fa-search-location"></i
+          ></a>
+        </div>
       </div>
-      <div class="cards">
-        <img src="images/image84.jpg" alt="">
-        <h4>La Villete Park, Paris, France<br>August 15, 2018 <br>4:36 p.m.</h4>
-        <a href="https://www.google.com/maps/place/Faleh+Alaeddine/@48.8912705,2.3860968,19z/data=!3m1!4b1!4m5!3m4!1s0x47e66dcc0ffd0243:0x10ff49b5ca4b8d6a!8m2!3d48.8912705!4d2.3860968"><i
-            class="fas fa-search-location"></i></a>
+    </section>
+    <section class="album-grid" data-grid id="places">
+      <h2>Albums</h2>
+      <p>click to enlarge</p>
+      <div class="photo-container album-container">
+        <h3>Paris, August 2018</h3>
+        <img src="images/image1.jpg" alt="" />
+        <img src="images/image43.jpg" alt="" />
+        <img src="images/image51.jpg" alt="" />
+        <img src="images/image40.jpg" alt="" />
+        <img src="images/image65.jpg" alt="" />
+        <img src="images/image77.jpg" alt="" />
+        <img src="images/image84.jpg" alt="" />
+        <img src="images/image86.jpg" alt="" />
       </div>
-      <div class="cards">
-        <img src="images/image43.jpg" alt="">
-        <h4>Eiffel Tower, seen from Bateau Mouche, Seine River, Paris, France <br>August 14, 2018 <br>4:20 p.m.</h4>
-        <a href="https://www.google.com/maps/place/48%C2%B051'26.1%22N+2%C2%B017'19.8%22E/@48.857247,2.28884,17z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d48.8572475!4d2.2888404"><i
-            class="fas fa-search-location"></i></a>
+      <div class="photo-container album-container">
+        <h3>Buckhead, Atlanta, October 2018</h3>
+        <img src="images/DSC_0004.jpg" alt="" />
+        <img src="images/DSC_0021.jpg" alt="" />
+        <img src="images/DSC_0037.jpg" alt="" />
+        <img src="images/DSC_0038.jpg" alt="" />
       </div>
-      <div class="cards">
-        <img src="images/image2.jpg" alt="">
-        <h4>Malaquais Quay, Paris, France <br>August 16, 2018 <br>11:39 a.m.</h4>
-        <a href="https://www.google.com/maps/place/Quai+Malaquais,+75006+Paris,+France/@48.8583758,2.3331343,18z/data=!4m5!3m4!1s0x47e66e2877673a37:0x5f38da7d537f6088!8m2!3d48.8583476!4d2.333115"><i
-            class="fas fa-search-location"></i></a>
+      <div class="photo-container album-container">
+        <h3>Atlanta Pride, Midtown Atlanta, October 2018</h3>
+        <img src="images/gayPrideParade.jpg" alt="" />
+        <img src="images/gayPrideParade46.jpg" alt="" />
+        <img src="images/gayPrideParade89.jpg" alt="" />
       </div>
-    </div>
-
-  </section>
-  <section class="album-grid" data-grid id="places">
-    <h2>Albums</h2>
-    <p>click to enlarge</p>
-    <div class="photo-container album-container">
-      <h3>Paris, August 2018</h3>
-      <img src="images/image1.jpg" alt="">
-      <img src="images/image43.jpg" alt="">
-      <img src="images/image51.jpg" alt="">
-      <img src="images/image40.jpg" alt="">
-      <img src="images/image65.jpg" alt="">
-      <img src="images/image77.jpg" alt="">
-      <img src="images/image84.jpg" alt="">
-      <img src="images/image86.jpg" alt="">
-    </div>
-    <div class="photo-container album-container">
-      <h3>Buckhead, Atlanta, October 2018</h3>
-      <img src="images/DSC_0004.jpg" alt="">
-      <img src="images/DSC_0021.jpg" alt="">
-      <img src="images/DSC_0037.jpg" alt="">
-      <img src="images/DSC_0038.jpg" alt="">
-    </div>
-    <div class="photo-container album-container">
-      <h3>Atlanta Pride, Midtown Atlanta, October 2018</h3>
-      <img src="images/gayPrideParade.jpg" alt="">
-      <img src="images/gayPrideParade46.jpg" alt="">
-      <img src="images/gayPrideParade89.jpg" alt="">
-    </div>
-  </section>
-  <h2>About me:</h2>
-  <section class="about" id="about">
-    <img src="images/head-shot.png" alt="">
-    <div class="info">
-      <h3>Lorenzo Salvio</h3>
-      <h5>Software Developer, Amateur Photographer</h5>
-      <p>Photography has been a hobby of mine since that one class I took back in high school. I have just recently decided
-        to take it more seriously in my search for a new creative outlet. My goal is to share experiences, not just images.</p>
-    </div>
-  </section>
-  <footer>
-    <ul class="contact" id="contact-me">
-      <li><a href="tel:1-949-285-1391"><i class="fas fa-phone-square"></i></a>
-        <li><a href="mailto:salviolorenzo@gmail.com"><i class="fas fa-envelope-square"></i></a>
-          <li><a href="https://www.linkedin.com/in/lorenzo-salvio-173210120/"><i class="fab fa-linkedin"></i></a></li>
-          <!-- <li><a href="#"><i class="far fa-compass"></i></a></li> -->
-          <li><a href="https://github.com/salviolorenzo"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.instagram.com/the.actual.boi/"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/lorenzo.salvio.9"><i class="fab fa-facebook"></i></a></li>
-    </ul>
-    <p>Shooting on Nikon D3400 -- 18-55mm/70-300mm | iPhone 6s Plus</p>
-  </footer>
-  <script src="scripts/main.js"></script>
-</body>
-
+      <div class="photo-container album-container">
+        <h3>Buckhead Skate, December 2, 2018</h3>
+        <img src="images/dec2_1.jpg" alt="" />
+        <img src="images/dec2_2.jpg" alt="" />
+        <img src="images/dec2_3.jpg" alt="" />
+      </div>
+    </section>
+    <h2>About me:</h2>
+    <section class="about" id="about">
+      <img src="images/head-shot.png" alt="" />
+      <div class="info">
+        <h3>Lorenzo Salvio</h3>
+        <h5>Software Developer, Amateur Photographer</h5>
+        <p>
+          Photography has been a hobby of mine since that one class I took back
+          in high school. I have just recently decided to take it more seriously
+          in my search for a new creative outlet. My goal is to share
+          experiences, not just images.
+        </p>
+      </div>
+    </section>
+    <footer>
+      <ul class="contact" id="contact-me">
+        <li>
+          <a href="tel:1-949-285-1391"><i class="fas fa-phone-square"></i></a>
+        </li>
+        <li>
+          <a href="mailto:salviolorenzo@gmail.com"
+            ><i class="fas fa-envelope-square"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/lorenzo-salvio-173210120/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <!-- <li><a href="#"><i class="far fa-compass"></i></a></li> -->
+        <li>
+          <a href="https://github.com/salviolorenzo"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/the.actual.boi/"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/lorenzo.salvio.9"
+            ><i class="fab fa-facebook"></i
+          ></a>
+        </li>
+      </ul>
+      <p>Shooting on Nikon D3400 -- 18-55mm/70-300mm | iPhone 6s Plus</p>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
